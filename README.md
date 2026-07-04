@@ -5,7 +5,7 @@
 From Kaggle: [https://www.kaggle.com/competitions/titanic/overview]
 
 ## Objective
-The goal of this project is to build a predictive model that answers the famous question: "What sorts of people were more likely to survive the Titanic disaster?". Using passenger data such as age, sex, class, fare, and family size, the model identifies key survival factors and generates predictions for the Kaggle test set.
+The goal of this project is to build a predictive model that answers the famous question: "What sorts of people were more likely to survive the Titanic disaster?" Using passenger data such as age, sex, class, fare, and family size, the model identifies key survival factors and generates predictions for the Kaggle test set.
 
 ## Notebook Structure & Workflow
 * **Data Loading & Exploration:** Load train and test datasets, inspect structure, and identify missing values.
@@ -21,7 +21,7 @@ The goal of this project is to build a predictive model that answers the famous 
 * **Socio-economic Status:** Higher fare and lower passenger class (Pclass 1) were strongly associated with higher survival probability.
 * **Model Performance:** The Random Forest achieved approximately **82.7%** accuracy on the validation set, providing a solid baseline for this classic dataset.
 
-## Feature Importance (from the Random Forest model):
+## Feature Importance
 * **Sex:** Most influential feature.
 * **Fare / Pclass:** Strong indicators of socio-economic status and access to lifeboats.
 * **Age:** Relevant, particularly distinguishing children from adults.
