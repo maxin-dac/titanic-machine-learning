@@ -5,10 +5,9 @@
 From Kaggle: [https://www.kaggle.com/competitions/titanic/overview]
 
 ## Objective
-The goal of this project is to build a predictive model that answers the famous question: "What sorts of people were more likely to survive the Titanic disaster?" Using passenger data such as age, sex, class, fare, and family size, the model identifies key survival factors and generates predictions for the Kaggle test set.
+The goal of this project is to build a predictive model that answers the famous question: "What sorts of people were more likely to survive the Titanic disaster?". Using passenger data such as age, sex, class, fare, and family size, the model identifies key survival factors and generates predictions for the Kaggle test set.
 
 ## Notebook Structure & Workflow
-The notebook follows a standard machine learning workflow:
 * **Data Loading & Exploration:** Load train and test datasets, inspect structure, and identify missing values.
 * **Exploratory Data Analysis (EDA):** Visualize relationships between features and survival (e.g., survival by sex and age).
 * **Data Cleaning & Preprocessing:** Handle missing values (Age, Fare, Embarked), drop uninformative columns (Name, Ticket, Cabin), and encode categorical variables (Sex, Embarked).
