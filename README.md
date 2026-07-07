@@ -2,7 +2,7 @@
 <img width="950" height="200" alt="image" src="https://github.com/user-attachments/assets/e7c7389a-2c48-485c-81cc-9b99c78faa0d" />
 
 ## Context
-- From Kaggle: [https://www.kaggle.com/competitions/titanic/overview]
+- From **[Kaggle](https://www.kaggle.com/competitions/titanic/overview)**
 - **Dataset:** test.csv, train.csv
 
 ## Objective
@@ -40,6 +40,4 @@ The goal of this project is to build a predictive model that answers the famous 
 * **Environment:** Kaggle Notebook
 
 ---
-*To explore the detailed code, feel free to download the notebook file on this repo, or check out my Kaggle: [https://www.kaggle.com/code/maximendacleu/titanic-analysis].*
-
-***By: Maxime NDACLEU | BI & Data Analyst***
+*To explore the detailed code, feel free to download the notebook file on this repo, or check out my [Kaggle](https://www.kaggle.com/code/maximendacleu/titanic-analysis])*
