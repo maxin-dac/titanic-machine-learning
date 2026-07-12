@@ -47,4 +47,4 @@ This project uses a **Soft Voting Ensemble Classifier** to maximize generalizati
 
 ---
 
-*To explore the detailed code, BI dashboards, and statistical tests, feel free to download the notebook file in this repo, or check out my [Kaggle Profile](https://www.kaggle.com/code/maximendacleu/titanic-analysis).*
+*To explore the detailed code, BI dashboards, and statistical tests, feel free to download the ipynb or pdf file in this repo. You can also check out my [Kaggle Profile](https://www.kaggle.com/code/maximendacleu/titanic-analysis).*
