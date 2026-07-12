@@ -1,49 +1,50 @@
-# Titanic Survival Prediction - Machine Learning
-<img width="950" height="200" alt="image" src="https://github.com/user-attachments/assets/e7c7389a-2c48-485c-81cc-9b99c78faa0d" />
 
-## Context
-- From [Kaggle](https://www.kaggle.com/competitions/titanic/overview)
-- Dataset: test.csv, train.csv
+# 🚢 TITANIC: SURVIVAL DYNAMICS & PREDICTIVE MODELING
 
-## Objective
-The goal of this project is to build a predictive model that answers the famous question: "What sorts of people were more likely to survive the Titanic disaster?" Using passenger data such as age, sex, class, fare, and family size, the model identifies key survival factors and generates predictions for the Kaggle test set.
+<img width="950" height="200" alt="Titanic Header" src="https://github.com/user-attachments/assets/e7c7389a-2c48-485c-81cc-9b99c78faa0d" />
 
-## Notebook Structure & Workflow
-* **Data Loading & Exploration:** Load train and test datasets, inspect structure, and identify missing values.
-* **Exploratory Data Analysis (EDA):** Visualize relationships between features and survival (e.g., survival by sex and age).
-* **Data Cleaning & Preprocessing:** Handle missing values (Age, Fare, Embarked), drop uninformative columns (Name, Ticket, Cabin), and encode categorical variables (Sex, Embarked).
-* **Model Building:** Train a Random Forest Classifier and evaluate on a validation split.
-* **Feature Importance Analysis:** Identify which features contributed most to predictions.
-* **Submission Generation:** Predict on the test set and create the Kaggle submission file.
+## 📖 Context
+- **Source:** [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic/overview)
+- **Datasets:** `train.csv` (891 passengers) & `test.csv` (418 passengers)
 
-## Key Insights
-* **Sex:** Females had a dramatically higher survival rate than males, consistent with the "women and children first" protocol.
-* **Age:** Children (especially under 10) had better survival odds compared to adults. Young adults (18–30) formed a large portion of the casualties.
-* **Socio-economic Status:** Higher fare and lower passenger class (Pclass 1) were strongly associated with higher survival probability.
-* **Model Performance:** The Random Forest achieved approximately **82.7%** accuracy on the validation set, providing a solid baseline for this classic dataset.
+## 🎯 Objective
+The goal of this project is twofold:
+1. **Business Intelligence (BI):** Perform a deep Exploratory Data Analysis (EDA) to transform historical passenger records into actionable operational intelligence. We identify and quantify the core drivers of survival (gender, class, family dynamics) and translate them into passenger personas and risk scores.
+2. **Machine Learning:** Build a robust, top-tier predictive model using advanced Feature Engineering and Ensemble Learning to predict survival on the unseen test set.
 
-## Feature Importance
-* **Sex:** Most influential feature.
-* **Fare / Pclass:** Strong indicators of socio-economic status and access to lifeboats.
-* **Age:** Relevant, particularly distinguishing children from adults.
+## 🔄 Notebook Structure & Workflow
 
-## Model Insights & Key Findings
-* **Women, Children, and the Wealthy** were significantly more likely to survive.
-* The analysis confirms historical accounts: survival was heavily influenced by **gender, age, and class** rather than random chance.
-* The Random Forest model effectively captured these patterns, with clear interpretability through feature importance.
+| Phase | Description |
+| :--- | :--- |
+| **1. Data Quality & Imputation** | Strategic missing-value handling (e.g., imputing `Age` using median by `Pclass` & `Title`). |
+| **2. Deep EDA & BI** | Univariate, Bivariate, and Multivariate analysis. Statistical validation (Chi-square, ANOVA) to prove feature significance. |
+| **3. Advanced Feature Engineering** | Extracted latent variables: `Title` (from Name), `Deck` (from Cabin), `FamilySize`, `IsAlone`, `Ticket_Freq`, and `FarePerPerson`. |
+| **4. Predictive Modeling** | Implemented an **Ensemble Voting Classifier** combining Random Forest, Gradient Boosting, SVM, and Logistic Regression. |
+| **5. Validation & Submission** | Stratified 10-Fold Cross-Validation and generation of the final `submission.csv`. |
 
-## Tech Stack & Libraries
+## 📊 Key Business Insights & Findings
+* **The Gender & Class Interaction:** The "women and children first" protocol was applied asymmetrically. 1st/2nd-class females had near-universal survival (>90%), while 3rd-class females dropped to 50%. Class overrode gender for poorer women.
+* **The "Goldilocks" Family Effect:** A clear inverted-U relationship. Solo travelers (~30% survival) and large families ≥5 (~17% survival) fared worst. Families of 2-4 had the highest survival rates (50-70%).
+* **Deck Proximity:** Decks B-D (1st class, boat-deck adjacent) showed >65% survival. Deck G (lowest, 3rd class) dropped to ~28%. The engineered `Deck` feature proved highly significant.
+* **Fare as a Continuous Proxy:** Survival rises monotonically with fare quintile (Q1 ≈ 20% → Q5 ≈ 58%), capturing within-class hierarchy better than `Pclass` alone.
+
+## 🧠 Machine Learning Approach
+This project uses a **Soft Voting Ensemble Classifier** to maximize generalization and minimize variance:
+* **Random Forest** (Handles non-linearities well)
+* **Gradient Boosting** (State-of-the-art for tabular data)
+* **Support Vector Machine** (SVM with RBF kernel, scaled)
+* **Logistic Regression** (Linear baseline with regularization)
+
+*The model weighs predictions, giving higher importance to Gradient Boosting and Random Forest, achieving a cross-validated accuracy of **~82%**.*
+
+## 🛠️ Tech Stack & Libraries
 
 * **Language:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-
 * **Data Manipulation:** ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-
 * **Visualization:** ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat) ![Seaborn](https://img.shields.io/badge/Seaborn-5B8DB8?style=flat)
-
-* **Machine Learning:** ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white) (`RandomForestClassifier`, `train_test_split`, `accuracy_score`)
-
+* **Machine Learning:** ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white) (`VotingClassifier`, `RandomForest`, `GradientBoosting`, `SVC`, `StratifiedKFold`)
 * **Environment:** ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-F37626?style=flat&logo=jupyter&logoColor=white) ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
 
 ---
 
-*To explore the detailed code, feel free to download the notebook file on this repo, or check out my [Kaggle](https://www.kaggle.com/code/maximendacleu/titanic-analysis]).*
+*To explore the detailed code, BI dashboards, and statistical tests, feel free to download the notebook file in this repo, or check out my [Kaggle Profile](https://www.kaggle.com/code/maximendacleu/titanic-analysis).*
