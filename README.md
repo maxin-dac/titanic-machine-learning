@@ -7,8 +7,8 @@
 
 ## 🎯 Objective
 The goal of this project is twofold:
-1. **Business Intelligence (BI):** Perform a deep Exploratory Data Analysis (EDA) to transform historical passenger records into actionable operational intelligence. We identify and quantify the core drivers of survival (gender, class, family dynamics) and translate them into passenger personas and risk scores.
-2. **Machine Learning:** Build a robust, top-tier predictive model using advanced Feature Engineering and Ensemble Learning to predict survival on the unseen test set.
+1. Perform a deep Exploratory Data Analysis (EDA) to transform historical passenger records into actionable operational intelligence. We identify and quantify the core drivers of survival (gender, class, family dynamics) and translate them into passenger personas and risk scores.
+2. Build a robust, top-tier predictive model using advanced Feature Engineering and Ensemble Learning to predict survival on the unseen test set.
 
 ## 🔄 Notebook Structure & Workflow
 
