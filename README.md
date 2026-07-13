@@ -33,7 +33,7 @@ This project uses a **Soft Voting Ensemble Classifier** to maximize generalizati
 * **Support Vector Machine** (SVM with RBF kernel, scaled)
 * **Logistic Regression** (Linear baseline with regularization)
 
-*The model weighs predictions, giving higher importance to Gradient Boosting and Random Forest, achieving a cross-validated accuracy of **~82%**.*
+*The model weighs predictions, giving higher importance to Gradient Boosting and Random Forest, achieving a cross-validated accuracy of **76.79%**.*
 
 ## 🛠️ Tech Stack & Libraries
 
