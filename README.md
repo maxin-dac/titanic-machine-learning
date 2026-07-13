@@ -2,7 +2,7 @@
 # 🚢 Titanic: Survival Dynamics & Predictive Modeling
 
 ## 📖 Context
-- **Source:** [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic/overview)
+- **Source:** [Kaggle](https://www.kaggle.com/competitions/titanic/overview)
 - **Datasets:** `train.csv` (891 passengers) & `test.csv` (418 passengers)
 
 ## 🎯 Objective
