@@ -1,7 +1,5 @@
 
-# 🚢 TITANIC: SURVIVAL DYNAMICS & PREDICTIVE MODELING
-
-<img width="950" height="200" alt="Titanic Header" src="https://github.com/user-attachments/assets/e7c7389a-2c48-485c-81cc-9b99c78faa0d" />
+# 🚢 Titanic: Survival Dynamics & Predictive Modeling
 
 ## 📖 Context
 - **Source:** [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic/overview)
@@ -47,4 +45,9 @@ This project uses a **Soft Voting Ensemble Classifier** to maximize generalizati
 
 ---
 
-*To explore the detailed code, BI dashboards, and statistical tests, feel free to download the ipynb or pdf file in this repo. You can also check out my [Kaggle Profile](https://www.kaggle.com/code/maximendacleu/titanic-analysis).*
+🚀 Explore the Notebook
+Want to see the code behind these insights?
+
+* Clone this repo and run the local Jupyter Notebook.
+* Download the pdf file on this repo.
+* Check out the interactive, up-to-date version directly on [Kaggle](https://www.kaggle.com/code/maximendacleu/titanic-analysis).
