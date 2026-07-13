@@ -1,5 +1,5 @@
 
-# 🚢 Titanic: Survival Dynamics & Predictive Modeling
+# 🚢 Titanic: Survival dynamics & Predictive modeling
 
 ## 📖 Context
 - **Source:** [Kaggle](https://www.kaggle.com/competitions/titanic/overview)
